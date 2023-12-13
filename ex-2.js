@@ -19,10 +19,9 @@ let studentScores = {
 // } = studentProfile;
 
 // const { math, english, tech } = studentScores;
-const { scores } = studentProfile;
-
 const newStudentProfile = {
   ...studentProfile,
-  scores: { ...scores, ...studentScores },
+  scores: { ...studentProfile.scores, ...studentScores },
 };
+
 console.log(newStudentProfile);
